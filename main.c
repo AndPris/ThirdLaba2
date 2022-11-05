@@ -2,7 +2,7 @@
 
 int main() {
     short year, month, date, day, n, leapYear;
-    char ch, cond=0;
+    char ch, cond;
 
     do {
         cond = 0;
@@ -21,7 +21,6 @@ int main() {
             ch=' ';
         };
     } while(cond);
-    cond = 0;
     ch=' ';
 
     if( (year%100!=0 && year%4==0) || (year%100==0 && year%400==0) ) {
@@ -47,7 +46,6 @@ int main() {
             ch=' ';
         };
     } while(cond);
-    cond = 0;
     ch=' ';
 
     do {
